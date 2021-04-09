@@ -10,6 +10,27 @@ module.exports = {
             filename: '../app.html'
         })
     ],
+    module: {
+        rules: [
+            {
+                test: /\.js(x*)$/,
+                exclude: /(node_modules)/,
+                use: ['babel-loader']
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ],
+            }
+        ]
+    },
     devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'public/js'),

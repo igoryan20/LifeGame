@@ -1,4 +1,8 @@
 'use strict'
 
-React = require('react');
-ReactDOM = require('react-dom');
+window.React = require('react');
+window.ReactDOM = require('react-dom');
+
+let App = require('../views/app.jsx');
+
+import '../css/app.css';

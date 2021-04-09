@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+body {
+  background-color: antiquewhite;
+  font-family: 'Amatic SC', cursive;
+  background-image: url('../images/start.jpg');
+  background-repeat:round;
+  height: 100%;
+}
+
+.centerContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20vh;
+  width: 50%;
+  height: 77.9vh;
+}
+
+h1 {
+  font-size: 60pt;
+}
+
+button {
+  font-family: 'Amatic SC';
+  font-size: 15pt;
+}
+
+bdi {
+  color: white;
+}
+
+.btn {
+  background-color: white;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  letter-spacing: 2pt;
+}
+
+.btn:focus, .btn:hover {
+  cursor: pointer;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.welcome {
+  color: gainsboro;
+}
+
+.centerContainer > h1 {
+  padding-left: 2.5rem;
+}
