@@ -6,12 +6,13 @@ module.exports = {
     entry: './resources/js/app.js',
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Development",
+            template: 'resources/views/app.html',
+            filename: '../app.html'
         })
     ],
     devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'public/js'),
-        filename: 'app.bundle.js'
+        filename: 'app.js'
     }
 }
